@@ -1,16 +1,20 @@
 ---
 import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
 <header class="w-full max-w-3xl mx-auto px-6 pt-12 pb-4 sm:px-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-	<h2 class="text-xl font-bold tracking-tight text-gray-900">
-		<a href="/" class="hover:text-gray-600 transition-colors">{SITE_TITLE}</a>
+	<h2 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+		<a href="/" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">{SITE_TITLE}</a>
 	</h2>
-	<nav class="flex gap-4 sm:gap-6 text-sm font-medium text-gray-600">
-		<HeaderLink href="/" class="hover:text-gray-900 transition-colors">Home</HeaderLink>
-		<HeaderLink href="/projects" class="hover:text-gray-900 transition-colors">Projects</HeaderLink>
-		<HeaderLink href="/blog" class="hover:text-gray-900 transition-colors">Blog</HeaderLink>
-		<HeaderLink href="/about" class="hover:text-gray-900 transition-colors">About</HeaderLink>
-	</nav>
+	<div class="flex items-center gap-4 sm:gap-6">
+		<nav class="flex gap-4 sm:gap-6 text-sm font-medium text-gray-600 dark:text-gray-400">
+			<HeaderLink href="/" class="hover:text-gray-900 dark:hover:text-white transition-colors">Home</HeaderLink>
+			<HeaderLink href="/projects" class="hover:text-gray-900 dark:hover:text-white transition-colors">Projects</HeaderLink>
+			<HeaderLink href="/blog" class="hover:text-gray-900 dark:hover:text-white transition-colors">Blog</HeaderLink>
+			<HeaderLink href="/about" class="hover:text-gray-900 dark:hover:text-white transition-colors">About</HeaderLink>
+		</nav>
+		<ThemeToggle />
+	</div>
 </header>

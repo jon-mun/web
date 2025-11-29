@@ -13,11 +13,19 @@ const { title = SITE_TITLE, description = SITE_DESCRIPTION } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="antialiased text-gray-900 bg-white">
+<html lang="en" class="antialiased">
 	<head>
+		<script is:inline>
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark');
+			} else {
+				document.documentElement.classList.remove('dark');
+			}
+		</script>
 		<BaseHead title={title} description={description} />
 	</head>
-	<body class="flex flex-col min-h-screen font-sans leading-relaxed">
+	<body class="flex flex-col min-h-screen font-sans leading-relaxed bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300">
 		<Header />
 		<main class="flex-grow w-full max-w-3xl mx-auto px-6 py-12 sm:px-8 sm:py-16">
 			<slot />
