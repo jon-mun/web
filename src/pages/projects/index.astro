@@ -17,7 +17,7 @@ const projects = (await getCollection('projects')).sort(
 					<article class="border-b border-gray-100 dark:border-gray-800 pb-8 last:border-0">
 						<div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
 							<h2 class="text-xl font-semibold text-gray-900 dark:text-white">
-								<a href={project.data.link} target="_blank" rel="noopener noreferrer" class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+								<a href={`/projects/${project.id}/`} class="hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
 									{project.data.title}
 								</a>
 							</h2>
