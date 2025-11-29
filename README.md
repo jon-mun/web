@@ -1,62 +1,88 @@
-# Astro Starter Kit: Blog
+# Minimal Personal Website
 
-```sh
-pnpm create astro@latest -- --template blog
-```
+A lightweight, content-focused personal website built with [Astro](https://astro.build) and [Tailwind CSS v4](https://tailwindcss.com).
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🎯 Project Goals
 
-Features:
+- **Minimalistic Design**: Clean typography, neutral colors, and generous whitespace.
+- **Content First**: Focused on blog posts and project portfolios using Markdown/MDX.
+- **High Performance**: Static site generation with zero client-side JavaScript by default.
+- **Simplicity**: No complex component libraries or heavy runtime dependencies.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+## ✨ Features
+
+- **Tech Stack**: Astro 5.0 + Tailwind CSS v4 (via `@tailwindcss/vite`).
+- **Content Collections**:
+  - `src/content/blog`: Technical blog posts.
+  - `src/content/projects`: Portfolio/Project showcase.
+- **Pages**:
+  - **Home**: Introduction and featured projects.
+  - **Blog**: Chronological list of thoughts and tutorials.
+  - **Projects**: Dedicated portfolio listing.
+  - **About**: Static biographical page.
+- **SEO Ready**: Includes sitemap, RSS feed, and canonical URLs.
+- **Type Safe**: Full TypeScript support for content schemas and components.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
-├── public/
+├── public/             # Static assets (fonts, favicon, images)
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── assets/         # Optimized assets (images)
+│   ├── components/     # UI components (Header, Footer, Meta)
+│   ├── content/        # Markdown content sources
+│   │   ├── blog/       # Blog post files (.md, .mdx)
+│   │   └── projects/   # Project files (.md, .mdx)
+│   ├── layouts/        # Page layouts (Layout.astro, BlogPost.astro)
+│   ├── pages/          # Route definitions
+│   └── styles/         # Global styles & Tailwind imports
+├── astro.config.mjs    # Astro configuration
+└── package.json        # Project dependencies
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
-
-Any static assets, like images, can be placed in the `public/` directory.
 
 ## 🧞 Commands
 
-All commands are run from the root of the project, from a terminal:
+All commands are run from the root of the project:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| Command           | Action                                       |
+| :---------------- | :------------------------------------------- |
+| `pnpm install`    | Installs dependencies                        |
+| `pnpm dev`        | Starts local dev server at `localhost:4321`  |
+| `pnpm build`      | Builds the production site to `./dist/`      |
+| `pnpm preview`    | Preview the build locally                    |
+| `pnpm check`      | Runs `astro check` for type validation       |
 
-## 👀 Want to learn more?
+## 📝 Adding Content
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Blog Posts
+Create a new file in `src/content/blog/`:
 
-## Credit
+```markdown
+---
+title: "My New Post"
+description: "A short summary."
+pubDate: "2024-03-15"
+heroImage: "./cover.jpg" # Optional
+---
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+Write your content here using Markdown...
+```
+
+### Projects
+Create a new file in `src/content/projects/`:
+
+```markdown
+---
+title: "Project Name"
+description: "Brief description of the project."
+pubDate: "2024-01-20"
+tags: ["Astro", "React"]
+link: "https://github.com/..."
+---
+
+Project details...
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
