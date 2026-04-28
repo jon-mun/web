@@ -1,11 +1,10 @@
 ---
-title: "LiteLife"
+title: "LiteLife: ML-Driven Health & Nutrition Recommender"
 description: "A mobile app that provides personalized food and exercise recommendations using machine learning."
 pubDate: "2023-12-01"
 role: "Backend Developer & Cloud Engineer"
 year: "2023"
 tags: ["NestJS", "PostgreSQL", "Python (Flask)", "Kotlin", "GCP", "GitHub"]
-heroImage: "../../assets/blog-placeholder-3.jpg"
 ---
 
 ### Overview

@@ -1,5 +1,5 @@
 ---
-title: "DietDash"
+title: "DietDash: End-to-End Food Ordering & Delivery System"
 description: "A full food-ordering and delivery system similar to GoFood, built as a major software engineering project."
 pubDate: "2023-03-01"
 role: "Tech Lead"
@@ -13,7 +13,6 @@ tags:
     "WebSockets",
   ]
 link: "https://github.com/Lejhat-Bergijhi/veggytably-api"
-heroImage: "../../assets/blog-placeholder-about.jpg"
 ---
 
 ### Overview

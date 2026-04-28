@@ -1,11 +1,10 @@
 ---
-title: "Dental Hero"
+title: "Dental Hero: Gamified Dental Hygiene Education App"
 description: "An educational mobile app designed to teach children dental hygiene through a gamified 30-day brushing challenge."
 pubDate: "2023-04-01"
 role: "Mobile Developer"
 year: "2023"
 tags: ["Flutter", "Firebase", "ARCore"]
-heroImage: "../../assets/blog-placeholder-5.jpg"
 ---
 
 ### Overview

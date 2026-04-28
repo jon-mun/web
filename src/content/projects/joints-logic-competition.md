@@ -1,12 +1,11 @@
 ---
-title: "Joints Logic Competition Platform"
+title: "JLC: High-Scale Logic Competition Platform"
 description: "A platform for the 2023 Joints Logic Competition, providing event information and an official exam system."
 pubDate: "2023-02-01"
 role: "PIC & Backend Developer / Tech Lead"
 year: "2023"
 tags: ["Next.js", "Tailwind", "TRPC", "Prisma", "MongoDB", "Vercel", "Retool"]
 link: "https://github.com/Jogja-Information-Technology-Session/joints23-jlc"
-heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
 ### Overview

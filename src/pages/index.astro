@@ -2,16 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-const projects = (await getCollection('projects'))
-	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-	.slice(0, 3);
+const allProjects = await getCollection('projects');
+const featuredIds = ['siteprotect', 'dewabuilder', 'walpix-beam'];
+const projects = featuredIds
+	.map((id) => allProjects.find((p) => p.id === id))
+	.filter((p): p is NonNullable<typeof p> => p !== undefined);
 ---
 
 <Layout>
 	<section class="mb-16">
 		<h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Hello, I'm Jonathan Edmund.</h1>
 		<p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-			I learn, build, and create.
+			I'm a Software Engineer, Tech Lead, and AI Engineer based in Indonesia. I architect high-velocity platforms, integrate AI into production environments, and lead technical teams to build resilient infrastructure.
 		</p>
 	</section>
 

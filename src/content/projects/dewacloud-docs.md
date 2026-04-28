@@ -1,5 +1,5 @@
 ---
-title: "Dewacloud Docs"
+title: "Dewacloud Docs: Centralized Cloud Platform Documentation"
 description: "An official documentation site for the Dewacloud platform, serving as a centralized knowledge base."
 pubDate: "2024-09-01"
 role: "Tech Lead"
@@ -14,7 +14,6 @@ tags:
     "Dewacloud PaaS",
   ]
 link: "https://docs.dewacloud.com"
-heroImage: "../../assets/blog-placeholder-3.jpg"
 ---
 
 ### Overview

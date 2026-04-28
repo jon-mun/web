@@ -1,12 +1,11 @@
 ---
-title: "Calico"
+title: "Calico: AI-Powered Mental Health Support Chatbot"
 description: "A mental-health-focused chatbot that provides supportive responses and guided conversations."
 pubDate: "2023-11-01"
 role: "Mobile Developer"
 year: "2023"
 tags: ["Flutter", "Firebase", "Google Dialogflow", "GCP", "OpenAI GPT-3"]
 link: "https://github.com/Zem-Jos/calico"
-heroImage: "../../assets/blog-placeholder-4.jpg"
 ---
 
 ### Overview

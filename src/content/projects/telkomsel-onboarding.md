@@ -1,5 +1,5 @@
 ---
-title: "Telkomsel Onboarding (Cloud Infrastructure Provisioning System)"
+title: "Telkomsel: Automated Cloud Infrastructure Provisioning"
 description: "An internal system to digitize Telkomsel’s infrastructure request process, streamlining end-to-end onboarding."
 pubDate: "2024-03-01"
 role: "Full Stack Engineer"
@@ -14,7 +14,6 @@ tags:
     "Minio (S3)",
     "RedHat OpenStack",
   ]
-heroImage: "../../assets/blog-placeholder-2.jpg"
 ---
 
 ### Overview
