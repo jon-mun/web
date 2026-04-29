@@ -1,33 +1,30 @@
 ---
-title: "Dewabuilder: Architecting an AI-Powered K8s Platform in 30 Days"
-description: "Designed and delivered an enterprise Kubernetes platform with integrated AI capabilities in a single 4-week sprint with a 3-architect team."
-pubDate: "2026-04-01"
+title: "DewaBuilder: AI Web Builder"
+description: "An AI-powered website builder designed to rapidly orchestrate and generate web applications."
+pubDate: "2026-03-26"
 role: "Project Leader / Tech Lead"
-year: "2026 - Present (MVP Stage)"
+year: "2026 - Present"
 tags:
   [
-    "AI & Velocity",
     "NextJS",
     "FastAPI",
-    "K8s",
     "Redis",
-    "Ansible",
-    "Claude",
-    "Gemini",
+    "Kubernetes",
+    "Ansible"
   ]
 link: "https://dewabuilder.app"
 ---
 
 ### Overview
 
-We established parallel workstreams — infrastructure-as-code with Ansible, application platform on K8s, and AI integration layer using Claude and Gemini for intelligent operations. Daily architecture sync ensured zero conflicts. Delivered 2 days early.
+DewaBuilder (Project Arcane) is an enterprise-grade AI web builder. It leverages an orchestrated pipeline of AI agents to accelerate the development and generation of web platforms, operating on a robust Kubernetes infrastructure.
 
-### The Challenge
+### Highlights
 
-The client needed a production-ready Kubernetes platform with AI-powered operations, but had zero existing infrastructure and a hard 30-day deadline tied to a board presentation. Three architects needed to work in parallel without stepping on each other.
+- **Accelerated Velocity**: Achieved rapid development speeds by utilizing orchestrated AI agents and aggressively reusing foundational development modules (adapted from previous platforms like SiteProtect).
+- **Complex Architecture**: Designed and deployed a highly scalable, complex microservices architecture running entirely on Kubernetes (K8s) and managed with Ansible.
 
 ### The Results
 
-- **4-Week** Delivery
-- **3** Architects
-- **Enterprise** K8s Platform
+- **Team**: 3 Architects/Engineers
+- **Delivery**: Rapid time-to-market driven by AI orchestration
